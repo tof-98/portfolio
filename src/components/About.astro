@@ -1,0 +1,85 @@
+---
+---
+
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text fade-up">
+        <div class="section-tag">About me</div>
+        <h2 class="section-title">Developer by logic,<br />secured by passion.</h2>
+        <p>
+          Hi, I'm Toufic — an application programmer based in Hall in Tirol,
+          Austria, with a degree in computer science and a deep passion for
+          cyber security. I love transforming complex problems into clear and
+          elegant solutions — through clean code, efficient database structures,
+          or innovative security concepts.
+        </p>
+        <p>
+          At LITTERA Software &amp; Consulting, I work across the full stack:
+          designing RESTful APIs, building responsive UI components, optimising
+          database queries, and shipping production features used by library
+          institutions across Austria every day.
+        </p>
+        <p>
+          When I'm not coding, I'm deepening my knowledge of networks and
+          attack/defence scenarios, training at the gym, or getting lost in a
+          good book.
+        </p>
+        <div style="margin-top: 2rem;">
+          <a href="#projects" class="btn-primary">See my work</a>
+        </div>
+      </div>
+
+      <div class="fade-up" style="transition-delay:0.15s">
+        <p class="section-tag">Skills</p>
+        <div class="skills-wrap">
+          {[
+            { name: "Spring Boot / Java", pct: 88 },
+            { name: "REST API Design",    pct: 84 },
+            { name: "PostgreSQL / SQL",   pct: 82 },
+            { name: "Linux / GIT",        pct: 80 },
+            { name: "JavaScript",         pct: 78 },
+            { name: "PHP / Symfony",      pct: 75 },
+            { name: "React",              pct: 70 },
+            { name: "Drupal / Solr",      pct: 68 },
+            { name: "Cyber Security",     pct: 62 },
+            { name: "Python",             pct: 55 },
+          ].map(({ name, pct }) => (
+            <div class="skill-row">
+              <span class="skill-lbl">{name}</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style={`width:${pct}%`}></div>
+              </div>
+              <span class="skill-pct">{pct}%</span>
+            </div>
+          ))}
+        </div>
+
+        <p class="section-tag" style="margin-top:2rem;">Certifications</p>
+        <div class="cert-list">
+          <div class="cert-item">
+            <span class="cert-icon">🎓</span>
+            <div>
+              <div class="cert-name">OOP Java: Data Structures &amp; Beyond</div>
+              <div class="cert-issuer">Coursera · Nov 2023</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <span class="cert-icon">🔒</span>
+            <div>
+              <div class="cert-name">Google Cybersecurity</div>
+              <div class="cert-issuer">Coursera · Dec 2025</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <span class="cert-icon">🤖</span>
+            <div>
+              <div class="cert-name">AI Literacy &amp; Compliance</div>
+              <div class="cert-issuer">Mindlane · Feb 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

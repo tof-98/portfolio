@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Local Caches (The ones you asked about)
+.astro/
+.claude/
+
+# Environment variables (Safety first!)
+.env
+.env.*
+
+# System files
+.DS_Store
